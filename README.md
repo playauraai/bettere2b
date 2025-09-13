@@ -169,7 +169,7 @@ python test.py
 
 ## 🆚 Comparison with Official E2B
 
-| Feature | Official E2B | Your E2B Clone |
+| Feature | Official E2B | BETTER E2B |
 |---------|--------------|----------------|
 | Sandbox Creation | ✅ | ✅ |
 | Code Execution | ✅ | ✅ |
@@ -212,9 +212,9 @@ await sandbox.runCode('echo "Hello"', 'bash')
 
 ## 🔗 Links
 
-- **Server Repository**: [Your E2B Clone Server](https://github.com/yourusername/your-e2b-clone)
-- **Documentation**: [API Docs](https://yourdomain.com/docs)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/your-e2b-clone-sdk/issues)
+- **Server Repository**: [Your E2B Clone Server](https://github.com/playauraai/bettere2b/)
+- **Documentation**: [API Docs](https://a9x11.com/docs)
+- **Issues**: [GitHub Issues](https://github.com/playauraai/bettere2b/issues)
 
 ## 📄 License
 
