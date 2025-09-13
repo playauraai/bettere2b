@@ -1,0 +1,52 @@
+{
+  "name": "bettere2b",
+  "version": "1.0.0",
+  "description": "BetterE2B - Drop-in replacement for @e2b/code-interpreter with dynamic subdomain support",
+  "main": "dist/bettere2b.js",
+  "module": "dist/bettere2b.esm.js",
+  "types": "dist/bettere2b.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:js && npm run build:types && npm run build:esm",
+    "build:js": "node -e \"const fs=require('fs'); if(!fs.existsSync('dist')) fs.mkdirSync('dist'); fs.copyFileSync('bettere2b.js', 'dist/bettere2b.js')\"",
+    "build:types": "node -e \"const fs=require('fs'); fs.copyFileSync('bettere2b.d.ts', 'dist/bettere2b.d.ts')\"",
+    "build:esm": "node -e \"const fs=require('fs'); fs.copyFileSync('bettere2b.js', 'dist/bettere2b.esm.js')\"",
+    "test": "node test.js",
+    "test:ci": "npm run test",
+    "lint": "echo 'No linting configured'",
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish --access public",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "e2b",
+    "sandbox",
+    "code-execution",
+    "docker",
+    "subdomain",
+    "dynamic",
+    "sdk",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/bettere2b.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/bettere2b/issues"
+  },
+  "homepage": "https://github.com/yourusername/bettere2b#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "peerDependencies": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
